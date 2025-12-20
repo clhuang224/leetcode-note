@@ -1,6 +1,7 @@
 import { describe, it, expect } from 'vitest'
 import recursion from './solutions/recursion'
 import { arrayToList, listToArray } from '../utils/list-node'
+import iteration from './solutions/iteration'
 
 type Case = {
     name: string
@@ -31,7 +32,8 @@ const cases: Case[] = [
 ]
 
 const solutions = [
-    { name: 'recursion', fn: recursion }
+    { name: 'recursion', fn: recursion },
+    { name: 'iteration', fn: iteration }
 ]
 
 describe('0002 - Add Two Numbers', () => {
