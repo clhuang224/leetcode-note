@@ -3,6 +3,7 @@ import { arrayToList, listToArray } from '../utils/list-node'
 import nestedRecursion from './solutions/nested-recursion'
 import recursionWithCarry from './solutions/recursion-with-carry'
 import iteration from './solutions/iteration'
+import branchlessIteration from './solutions/branchless-iteration'
 
 type Case = {
     name: string
@@ -35,7 +36,8 @@ const cases: Case[] = [
 const solutions = [
     { name: 'nested recursion', fn: nestedRecursion },
     { name: 'recursion with carry', fn: recursionWithCarry },
-    { name: 'iteration', fn: iteration }
+    { name: 'iteration', fn: iteration },
+    { name: 'branchless iteration', fn: branchlessIteration }
 ]
 
 describe('0002 - Add Two Numbers', () => {
