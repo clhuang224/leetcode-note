@@ -1,8 +1,8 @@
 import { ListNode } from '../../utils/list-node'
 
 /**
- * Add Two Numbers - recursion
- * 用遞迴逐節點相加兩個 linked list，並在每一層處理進位。
+ * Add Two Numbers - nested recursion
+ * 用遞迴逐節點相加兩個 linked list，並在每一層用遞迴處理進位。
  *
  * 假設 l1 長度為 m，l2 長度為 n。
  *
@@ -17,8 +17,7 @@ export default function addTwoNumbers(list1: ListNode | null, list2: ListNode | 
     if (!list1) return list2
     if (!list2) return list1
     let current = list1.value + list2.value
-    let node = current > 9
+    return current > 9
         ? new ListNode(current - 10, addTwoNumbers(addTwoNumbers(new ListNode(1, null), list1.next), list2.next))
         : new ListNode(current, addTwoNumbers(list1.next, list2.next))
-    return node
 }

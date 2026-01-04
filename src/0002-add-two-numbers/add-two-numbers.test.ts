@@ -1,6 +1,7 @@
 import { describe, it, expect } from 'vitest'
-import recursion from './solutions/recursion'
 import { arrayToList, listToArray } from '../utils/list-node'
+import nestedRecursion from './solutions/nested-recursion'
+import recursionWithCarry from './solutions/recursion-with-carry'
 import iteration from './solutions/iteration'
 
 type Case = {
@@ -32,7 +33,8 @@ const cases: Case[] = [
 ]
 
 const solutions = [
-    { name: 'recursion', fn: recursion },
+    { name: 'nested recursion', fn: nestedRecursion },
+    { name: 'recursion with carry', fn: recursionWithCarry },
     { name: 'iteration', fn: iteration }
 ]
 
