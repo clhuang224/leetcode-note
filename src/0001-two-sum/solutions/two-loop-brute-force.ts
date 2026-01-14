@@ -11,9 +11,8 @@
  * O(1)
  */
 export default function (numbers: number[], target: number): [number, number] {
-    let i = 0, j = 1
-    for (; i < numbers.length; i++) {
-        for (j = i + 1; j < numbers.length; j++) {
+    for (let i = 0; i < numbers.length; i++) {
+        for (let j = i + 1; j < numbers.length; j++) {
             if (numbers[i] + numbers[j] === target) {
                 return [i, j]
             }
