@@ -2,7 +2,7 @@
  * Longest Substring Without Repeating Characters - Two Loops with Set
  * 
  * 外迴圈為左指標，內迴圈為右指標，並用一個 Set 紀錄兩個指標之間已經出現過的字元。
- * 當遇到重複字元時，比較左右指標之間的長度與當下紀錄的 maxLength，並更新 maxLength。
+ * 當遇到非重複字元時，比較左右指標之間的長度與當下紀錄的 maxLength，並更新 maxLength。
  * 
  * 假設 s 的長度為 n，字元種類有 m 種，其中 m <= n。
  * 最長不重複子字串長度為 l，其中 l <= m。
