@@ -1,6 +1,7 @@
 import { describe, it, expect } from 'vitest'
 import twoLoopsWithSet from './solutions/two-loops-with-set'
 import slidingWindow from './solutions/sliding-window'
+import dynamicProgramming from './solutions/dynamic-programming'
 
 type Case = {
     name: string
@@ -43,7 +44,8 @@ const cases: Case[] = [
 
 const solutions = [
     { name: 'two-loops-with-set', fn: twoLoopsWithSet },
-    { name: 'sliding-window', fn: slidingWindow }
+    { name: 'sliding-window', fn: slidingWindow },
+    { name: 'dynamic-programming', fn: dynamicProgramming }
 ]
 
 describe('0003 - Longest Substring Without Repeating Characters', () => {
