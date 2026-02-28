@@ -1,5 +1,6 @@
 import { describe, it, expect } from 'vitest'
 import javascriptSort from './solutions/javascript-sort'
+import twoPointersMerge from './solutions/two-pointers-merge'
 
 type Case = {
     name: string
@@ -30,7 +31,8 @@ const cases: Case[] = [
 ]
 
 const solutions = [
-    { name: 'javascript-sort', fn: javascriptSort }
+    { name: 'javascript-sort', fn: javascriptSort },
+    { name: 'two-pointers-merge', fn: twoPointersMerge }
 ]
 
 describe('0004 - Median of Two Sorted Arrays', () => {
