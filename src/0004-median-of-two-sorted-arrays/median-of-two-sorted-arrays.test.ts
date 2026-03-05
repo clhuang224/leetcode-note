@@ -37,7 +37,7 @@ const solutions = [
     { name: 'binary-search-partition', fn: binarySearchPartition }
 ]
 
-describe('0004 - Median of Two Sorted Arrays', () => {
+describe('0005 - Median of Two Sorted Arrays', () => {
     for (const solution of solutions) {
         describe(solution.name, () => {
             for (const c of cases) {
