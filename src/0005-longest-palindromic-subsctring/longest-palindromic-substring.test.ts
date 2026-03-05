@@ -1,5 +1,6 @@
 import { describe, it, expect } from 'vitest'
-import treeLoopBruteForce from './solutions/three-loop-brute-force'
+import bruteForceSubstring from './solutions/brute-force-substring'
+import bruteForceIndex from './solutions/brute-force-index'
 
 type Case = {
     name: string
@@ -31,7 +32,8 @@ const cases: Case[] = [
 ]
 
 const solutions = [
-    { name: 'three-loop-brute-force', fn: treeLoopBruteForce },
+    { name: 'brute-force-substring', fn: bruteForceSubstring },
+    { name: 'brute-force-index', fn: bruteForceIndex }
 ]
 
 describe('0005 - Longest Palindromic Substring', () => {
